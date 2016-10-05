@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+    <Button android:id="@+id/btnTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar" />
+
+    <Button android:id="@+id/btnMover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnTipo"
+        android:text="Lautaro" />
+
+    <Button android:id="@+id/btnAnimar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnMover"
+        android:text="A temuco" />
+
+    <Button android:id="@+id/btnPosicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnAnimar"
+        android:text="posicion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcador"
+        android:id="@+id/btnMarcador"
+        android:layout_below="@+id/btnTipo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poligono"
+        android:id="@+id/btnPoligono"
+        android:layout_alignTop="@+id/btnMarcador"
+        android:layout_toRightOf="@+id/btnMarcador"
+        android:layout_toEndOf="@+id/btnMarcador" />
+
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sa.alejandro.ejemplomapas.MapsActivity"
+    />
+
+
+
+</RelativeLayout>
